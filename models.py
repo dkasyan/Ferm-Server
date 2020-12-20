@@ -31,9 +31,8 @@ class Garden:
         self.garden[id] = data
         self.save_all()
 
-class LoginForm(FlaskForm):
-    username = StringField('username', validators=[DataRequired()])
-    password = PasswordField('password', validators=[DataRequired()])
+#class LoginForm(FlaskForm):
+#    username = StringField('username', validators=[DataRequired()])
+#    password = PasswordField('password', validators=[DataRequired()])
 
-
-garden = garden()
+garden = Garden()
